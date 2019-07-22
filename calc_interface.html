@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="Style/calc_interface.css">
+
+  </head>
+  <body>
+    <script src="Script/calc_interface.js" charset="utf-8"></script>
+    <center>
+    <div class="calc_body">
+      <center>
+
+      <div id="display_screen">
+        <div class="equa">
+          <h1 id="equation"></h1>
+        </div>
+        <div class="ans">
+          <h2 id="answer"></h2>
+        </div>
+      </div>
+      </center>
+      <div class="buttons">
+        <div class="">
+          <button id="sqr" onclick="sqr()">x^2</button>
+          <button id="power" onclick="power()">x^y</button>
+          <button id="sine" onclick="sine()">sin</button>
+          <button id="cos" onclick="cos()">cos</button>
+          <button id="tan" onclick="tan()">tan</button>
+        </div>
+        <div class="">
+          <button id="sqrt" onclick="sqrt()">sqrt</button>
+          <button id="powerten" onclick="powerten()">10^x</button>
+          <button id="log" onclick="log()">Log</button>
+          <button id="exp" onclick="exp()">Exp</button>
+          <button id="mod" onclick="mod()">Mod</button>
+        </div>
+        <div class="">
+          <button id="inv" onclick="inverse()">Inverse</button>
+          <button id="cleare" onclick="cleare()">CE</button>
+          <button id="clear" onclick="clear()">C</button>
+          <button id="bksp" onclick="bksp()">bckspce</button>
+          <button id="divide" onclick="divide()">÷</button>
+        </div>
+        <div class="">
+          <button id="pi" onclick="pi()">π</button>
+          <button id="seven" onclick="seven()">7</button>
+          <button id="eight" onclick="eight()">8</button>
+          <button id="nine" onclick="nine()">9</button>
+          <button id="multiply" onclick="multiply()">×</button>
+        </div>
+        <div class="">
+          <button id="factorial" onclick="factorial()">n!</button>
+          <button id="four" onclick="four()">4</button>
+          <button id="five" onclick="five()">5</button>
+          <button id="six" onclick="six()">6</button>
+          <button id="minus" onclick="minus()">-</button>
+        </div>
+        <div class="">
+          <button id="plus_minus" onclick="plus_minus()">±</button>
+          <button id="one" onclick="one()">1</button>
+          <button id="two" onclick="two()">2</button>
+          <button id="three" onclick="three()">3</button>
+          <button id="plus" onclick="plus()">+</button>
+        </div>
+        <div class="">
+          <button id="brack1" onclick="brack1()">(</button>
+          <button id="brack2" onclick="brack2()">)</button>
+          <button id="zero" onclick="zero()">0</button>
+          <button id="decimal" onclick="deci()">.</button>
+          <button id="equal" onclick="equalto()">=</button>
+        </div>
+      </div>
+    </div>
+    </center>
+  </body>
+</html>
