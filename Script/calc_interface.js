@@ -1,13 +1,7 @@
 var num;
 var existing_num;
 var x;
-<<<<<<< HEAD
-<<<<<<< HEAD
 var existing_equation;
-=======
->>>>>>> master
-=======
->>>>>>> 7ba8cd1d99e84db277a67effec849a8a426672da
 function sqr(){
   existing_num=document.getElementById('answer').innerHTML;
   var square=existing_num*existing_num;
@@ -16,20 +10,8 @@ function sqr(){
 }
 function power(){
   existing_num=document.getElementById('answer').innerHTML;
-<<<<<<< HEAD
-<<<<<<< HEAD
   document.getElementById('equation').innerHTML=existing_num+"^";
   document.getElementById('answer').innerHTML="";
-=======
-  var square=existing_num*existing_num;
-  document.getElementById('equation').innerHTML="sqr("+existing_num+")";
-  document.getElementById('answer').innerHTML=square;
->>>>>>> master
-=======
-  var square=existing_num*existing_num;
-  document.getElementById('equation').innerHTML="sqr("+existing_num+")";
-  document.getElementById('answer').innerHTML=square;
->>>>>>> 7ba8cd1d99e84db277a67effec849a8a426672da
 }
 function sine(){
   existing_num=document.getElementById('answer').innerHTML;
@@ -67,39 +49,19 @@ function log(){
   document.getElementById('answer').innerHTML=x;
 }
 function exp(){
-<<<<<<< HEAD
-<<<<<<< HEAD
   existing_num=document.getElementById('answer').innerHTML;
   if(existing_num=""){
     document.getElementById('answer').innerHTML="0.e+";
   }else{
     document.getElementById('answer').innerHTML=existing_num+".e+";
   }
-=======
-
->>>>>>> master
-=======
-
->>>>>>> 7ba8cd1d99e84db277a67effec849a8a426672da
 }
 function mod(){
   existing_num=document.getElementById('answer').innerHTML;
   if(existing_num=""){
-<<<<<<< HEAD
-<<<<<<< HEAD
     document.getElementById('equation').innerHTML="0Mod";
   }else{
     document.getElementById('equation').innerHTML=existing_num+"Mod";
-=======
-    document.getElementById('equation').innerHTML="0 Mod ";
-  }else{
-    document.getElementById('equation').innerHTML=existing_num+" Mod ";
->>>>>>> master
-=======
-    document.getElementById('equation').innerHTML="0 Mod ";
-  }else{
-    document.getElementById('equation').innerHTML=existing_num+" Mod ";
->>>>>>> 7ba8cd1d99e84db277a67effec849a8a426672da
   }
 }
 function inverse(){
@@ -116,8 +78,6 @@ function clear(){
 function bksp(){
   existing_num=document.getElementById('answer').innerHTML;
   document.getElementById('answer').innerHTML=existing_num.slice(0,-1);
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
 function divide(){
   existing_num=document.getElementById('answer').innerHTML;
@@ -129,24 +89,11 @@ function divide(){
     document.getElementById('equation').innerHTML=existing_equation+document.getElementById('answer').innerHTML+num;
   }
   document.getElementById('answer').innerHTML="";
-=======
-=======
->>>>>>> 7ba8cd1d99e84db277a67effec849a8a426672da
-
-}
-function divide(){
-
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> 7ba8cd1d99e84db277a67effec849a8a426672da
 }
 function pi(){
   document.getElementById('answer').innerHTML=Math.PI;
 }
 function multiply(){
-<<<<<<< HEAD
-<<<<<<< HEAD
   existing_num=document.getElementById('answer').innerHTML;
   existing_equation=document.getElementById('equation').innerHTML;
   num =document.getElementById('multiply').innerHTML;
@@ -156,12 +103,6 @@ function multiply(){
     document.getElementById('equation').innerHTML=existing_equation+document.getElementById('answer').innerHTML+num;
   }
   document.getElementById('answer').innerHTML="";
-=======
-
->>>>>>> master
-=======
-
->>>>>>> 7ba8cd1d99e84db277a67effec849a8a426672da
 }
 function factorial(){
   var n=1;
@@ -173,8 +114,6 @@ function factorial(){
   document.getElementById('answer').innerHTML=n;
 }
 function minus(){
-<<<<<<< HEAD
-<<<<<<< HEAD
   existing_num=document.getElementById('answer').innerHTML;
   existing_equation=document.getElementById('equation').innerHTML;
   num =document.getElementById('minus').innerHTML;
@@ -203,20 +142,6 @@ function plus(){
     document.getElementById('equation').innerHTML=existing_equation+document.getElementById('answer').innerHTML+"+";
   }
   document.getElementById('answer').innerHTML="";
-=======
-=======
->>>>>>> 7ba8cd1d99e84db277a67effec849a8a426672da
-
-}
-function plus_minus(){
-
-}
-function plus(){
-
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> 7ba8cd1d99e84db277a67effec849a8a426672da
 }
 function equalto(){
 
