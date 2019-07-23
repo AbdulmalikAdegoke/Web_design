@@ -1,6 +1,10 @@
 var num;
 var existing_num;
 var x;
+<<<<<<< HEAD
+var existing_equation;
+=======
+>>>>>>> master
 function sqr(){
   existing_num=document.getElementById('answer').innerHTML;
   var square=existing_num*existing_num;
@@ -9,9 +13,14 @@ function sqr(){
 }
 function power(){
   existing_num=document.getElementById('answer').innerHTML;
+<<<<<<< HEAD
+  document.getElementById('equation').innerHTML=existing_num+"^";
+  document.getElementById('answer').innerHTML="";
+=======
   var square=existing_num*existing_num;
   document.getElementById('equation').innerHTML="sqr("+existing_num+")";
   document.getElementById('answer').innerHTML=square;
+>>>>>>> master
 }
 function sine(){
   existing_num=document.getElementById('answer').innerHTML;
@@ -49,14 +58,29 @@ function log(){
   document.getElementById('answer').innerHTML=x;
 }
 function exp(){
+<<<<<<< HEAD
+  existing_num=document.getElementById('answer').innerHTML;
+  if(existing_num=""){
+    document.getElementById('answer').innerHTML="0.e+";
+  }else{
+    document.getElementById('answer').innerHTML=existing_num+".e+";
+  }
+=======
 
+>>>>>>> master
 }
 function mod(){
   existing_num=document.getElementById('answer').innerHTML;
   if(existing_num=""){
+<<<<<<< HEAD
+    document.getElementById('equation').innerHTML="0Mod";
+  }else{
+    document.getElementById('equation').innerHTML=existing_num+"Mod";
+=======
     document.getElementById('equation').innerHTML="0 Mod ";
   }else{
     document.getElementById('equation').innerHTML=existing_num+" Mod ";
+>>>>>>> master
   }
 }
 function inverse(){
@@ -73,16 +97,42 @@ function clear(){
 function bksp(){
   existing_num=document.getElementById('answer').innerHTML;
   document.getElementById('answer').innerHTML=existing_num.slice(0,-1);
+<<<<<<< HEAD
+}
+function divide(){
+  existing_num=document.getElementById('answer').innerHTML;
+  existing_equation=document.getElementById('equation').innerHTML;
+  num =document.getElementById('divide').innerHTML;
+  if(existing_num=""){
+    document.getElementById('equation').innerHTML="0"+num;
+  }else{
+    document.getElementById('equation').innerHTML=existing_equation+document.getElementById('answer').innerHTML+num;
+  }
+  document.getElementById('answer').innerHTML="";
+=======
 
 }
 function divide(){
 
+>>>>>>> master
 }
 function pi(){
   document.getElementById('answer').innerHTML=Math.PI;
 }
 function multiply(){
+<<<<<<< HEAD
+  existing_num=document.getElementById('answer').innerHTML;
+  existing_equation=document.getElementById('equation').innerHTML;
+  num =document.getElementById('multiply').innerHTML;
+  if(existing_num=""){
+    document.getElementById('equation').innerHTML="0"+num;
+  }else{
+    document.getElementById('equation').innerHTML=existing_equation+document.getElementById('answer').innerHTML+num;
+  }
+  document.getElementById('answer').innerHTML="";
+=======
 
+>>>>>>> master
 }
 function factorial(){
   var n=1;
@@ -94,6 +144,36 @@ function factorial(){
   document.getElementById('answer').innerHTML=n;
 }
 function minus(){
+<<<<<<< HEAD
+  existing_num=document.getElementById('answer').innerHTML;
+  existing_equation=document.getElementById('equation').innerHTML;
+  num =document.getElementById('minus').innerHTML;
+  if(existing_num=""){
+    document.getElementById('equation').innerHTML="0"+num;
+  }else{
+    document.getElementById('equation').innerHTML=existing_equation+document.getElementById('answer').innerHTML+num;
+  }
+  document.getElementById('answer').innerHTML="";
+}
+function plus_minus(){
+  existing_num=document.getElementById('answer').innerHTML;
+  if(existing_num=""){
+    document.getElementById('equation').innerHTML="0";
+  }else{
+    x=-1;
+    document.getElementById('answer').innerHTML=document.getElementById('answer').innerHTML*x;
+  }
+}
+function plus(){
+  existing_num=document.getElementById('answer').innerHTML;
+  existing_equation=document.getElementById('equation').innerHTML;
+  if(existing_num=""){
+    document.getElementById('equation').innerHTML="0+";
+  }else{
+    document.getElementById('equation').innerHTML=existing_equation+document.getElementById('answer').innerHTML+"+";
+  }
+  document.getElementById('answer').innerHTML="";
+=======
 
 }
 function plus_minus(){
@@ -101,6 +181,7 @@ function plus_minus(){
 }
 function plus(){
 
+>>>>>>> master
 }
 function equalto(){
 

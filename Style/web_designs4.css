@@ -242,12 +242,30 @@ nav li:hover{
   width: 200px;
   background-color: black;
   box-shadow:20px 20px 20px 1px #D3D3D3;
+  position: relative;
 }
 .pastbox{
   color: white;
   text-align: center;
 }
-
+.ytriangle{
+  position: absolute;
+  overflow: hidden;
+  border-left: 0px solid transparent ;
+  border-right: 100px solid transparent;
+  border-bottom: 190px solid orange;
+  /* background: linear-gradient(0deg, rgba(253,167,45,1) 0%, rgba(238,76,76,1) 100%); */
+  z-index: 1;
+}
+.btriangle{
+  position: absolute;
+  overflow: hidden;
+  margin-top:100px;
+  border-left: 70px solid transparent ;
+  border-right: 130px solid transparent;
+  border-bottom: 90px solid background;
+  background: linear-gradient(0deg, rgba(253,167,45,1) 0%, rgba(238,76,76,1) 100%);
+}
 .present{
   float:left;
   text-align: left;
@@ -257,6 +275,17 @@ nav li:hover{
   margin-left: 180px;
   box-shadow:20px 20px 20px 1px #D3D3D3;
   font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+.bcircle{
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  background: linear-gradient(0deg, rgba(234,175,255,1) 0%, rgba(103,103,224,1) 100%);
+  height: 190px;
+  width: 100px;
+  /* border-radius: 40%; */
+  clip-path: ellipse(99% 93% at 0% 93%);
 }
 .presentbox,.futurebox{
   text-align: center;
@@ -269,6 +298,19 @@ nav li:hover{
   background-color: #BFE9FF;
   box-shadow:20px 20px 20px 1px #D3D3D3;
   font-family: 'Roboto', sans-serif;
+}
+.ostar{
+  float: left;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  background: linear-gradient(0deg, rgba(253,187,45,1) 14%, rgba(255,95,37,1) 100%);
+  height: 250px;
+  width: 250px;
+  margin-top: 47px;
+  /* margin-right: 50px; */
+  margin-left: 0;
+  clip-path: polygon(48% 0, 61% 35%, 98% 35%, 68% 57%, 39% 57%, 39% 33%);
 }
 .randword{
   margin-top: 250px;
@@ -348,7 +390,7 @@ img{
   height: 120px;
   width: 120px;
   border-radius: 50%;
-  background-color: orange;
+  background: linear-gradient(0deg, rgba(253,187,45,1) 14%, rgba(255,95,37,1) 100%);
 }
 #sunrise{
   text-align: center;
@@ -468,7 +510,7 @@ img{
 .shapebox{
   width: 100%;
   height: 400px;
-  background-color: blue;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(227,165,255,1) 0%, rgba(122,107,255,1) 100%);
 }
 .options{
     width: 100%;
@@ -596,7 +638,8 @@ img{
   width: 0px;
   border-left: 250px solid transparent ;
   border-right: 0px solid transparent;
-  border-bottom: 500px solid blue;
+  border-bottom: 500px solid background;
+  background: linear-gradient(0deg, rgba(45,248,253,1) 0%, rgba(198,76,238,1) 100%);
   overflow: hidden;
   position: absolute;
   left: 1100px;
