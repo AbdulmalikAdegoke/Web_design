@@ -11,6 +11,7 @@ function sqr(){
 function power(){
   existing_num=document.getElementById('answer').innerHTML;
   document.getElementById('equation').innerHTML=existing_num+"^";
+  document.getElementById('answer').innerHTML="";
 }
 function sine(){
   existing_num=document.getElementById('answer').innerHTML;
