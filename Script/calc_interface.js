@@ -51,20 +51,22 @@ function log(){
   document.getElementById('answer').innerHTML=x;
 }
 function exp(){
-  existing_num=document.getElementById('answer').innerHTML;
+  // existing_num=document.getElementById('answer').innerHTML;
   if(existing_num=""){
-    document.getElementById('answer').innerHTML="0.e+";
+    document.getElementById('equation').innerHTML="0 .e+ ";
   }else{
-    document.getElementById('answer').innerHTML=existing_num+".e+";
+    document.getElementById('equation').innerHTML=document.getElementById('answer').innerHTML+" .e+ ";
   }
+  document.getElementById('answer').innerHTML="";
 }
 function mod(){
-  existing_num=document.getElementById('answer').innerHTML;
+  // existing_num=document.getElementById('answer').innerHTML;
   if(existing_num=""){
     document.getElementById('equation').innerHTML="0 Mod";
   }else{
-    document.getElementById('equation').innerHTML=existing_num+" Mod ";
+    document.getElementById('equation').innerHTML=document.getElementById('answer').innerHTML+" Mod ";
   }
+  document.getElementById('answer').innerHTML="";
 }
 function inverse(){
 
@@ -191,6 +193,13 @@ function equalto(){
       y=parseInt(calc_values[i+1],10);
       result=Math.pow(x,y);
       i+1;
+      calc_values[i]=result;
+    } else if(calc_values[i]==".e+"){
+      x=parseInt(calc_values[i-1],10);
+      y=parseInt(calc_values[i+1],10);
+      result=x*Math.pow(10,y);
+      i+1;
+      calc_values[i]=result;
     // } else if($calc_values[i]:contains("sin")) {
 
     } else{
